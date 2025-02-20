@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+.fjalla-one-regular {
+    font-family: "Fjalla One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background: rgb(0,104,71);
+    background: linear-gradient(90deg, rgba(0,104,71,1) 10%, rgba(255,255,255,1) 50%, rgba(201,0,22,1) 85%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+/* 
+  #006847
+  #FFFFFF
+  #C90016 */
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    justify-content: center;
+    gap: 40px;
+    font-size: large;
+}
+
+header div {
+    align-items: flex-start;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-family: 'Fjalla One', serif;
+    font-weight: 400;
+    font-size: x-large;
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.7px;
+    color: white;
+    font-family: 'Fjalla One', serif;
+    font-weight: 400;
+    font-size: x-large;
+    cursor: pointer;
+}
+#content {
+    border: 2px black solid;
+    width: 70%;
+    height: fit-content;
+    align-self: center;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.menucont {
+    border: 2px black solid;
+    width: 70%;
+    height: fit-content;
+    align-self: center;
+    align-items: center;
+    margin-top: 12vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menudivs {
+    padding: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    width: fit-content;
+    /* border: 1px black solid; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact {
+    border: 2px black solid;
+    width: 70%;
+    height: fit-content;
+    align-self: center;
+    align-items: center;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+  }
+p {
+    font-family: 'Fjalla One', serif;
+    padding: 20px;
+    color: black;
+    font-weight: 500;
+    font-size: x-large;
+    text-align: left;
+}
+
+/* footer {
+    font-family: 'Fjalla One', serif;
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+} */

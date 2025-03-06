@@ -35,4 +35,12 @@ module.exports = {
       },
     ],
   },
+  // experiments: {
+  //   outputModule: true, // 👈 Ensures ES Module output
+  // },
+  // resolve: {
+  //   alias: {
+  //     browser: "webextension-polyfill", // 👈 Fix for "browser is not defined"
+  //   },
+  // },
 };

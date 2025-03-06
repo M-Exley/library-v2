@@ -1,4 +1,136 @@
-* {
+*:not(.dropdown-main) {
   margin: 0;
   padding: 10px;
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#cards-container {
+  grid-row: 1;
+  grid-column: 1;
+  height: fit-content;
+  width: 500px;
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.notread {
+  display: none;
+  grid-row: 1;
+  grid-column: 2;
+  width: fit-content;
+  height: fit-content;
+  border: 2px black solid;
+}
+.book-card {
+  height: fit-content;
+  width: fit-content;
+  border: brown 1px dotted;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.book-card:hover {
+  transform: translateX(5px);
+}
+
+.button-delete {
+  padding: 3px;
+  height: 30px;
+  width: fit-content;
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.button-options {
+  padding: 3px;
+  height: 30px;
+  text-align: center;
+  width: fit-content;
+  vertical-align: middle;
+  color: black;
+  position: relative;
+}
+
+.counter {
+  display: inline;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+img {
+  /* width: 300px; */
+  height: 250px;
+  object-fit: cover;
+}
+
+.invalid {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+.dropdown-main {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  border: 1px black solid;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+  padding: 6px 2px 0px 18px;
+  height: 30px;
+  cursor: pointer;
+  width: 70px;
+  max-height: 20px;
+}
+
+.dropdown-list {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 0.5px black solid;
+  display: none;
+  position: absolute;
+  transform: translate(-19px, 20px);
+  gap: 1px;
+  padding: 0px;
+  list-style-type: none;
+  font-size: x-small;
+}
+li {
+  background-color: azure;
+  border: 1px black dotted;
+  /* width: fit-content; */
+  height: fit-content;
+  padding: 0px;
+  text-wrap: nowrap;
+}
+
+li:hover {
+  background-color: darkcyan;
+}
+
+svg {
+  display: inline-block;
+  padding: 0px;
+}
+
+#add {
+  margin-left: 20px;
 }

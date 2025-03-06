@@ -2,7 +2,7 @@
 
 # in this v2 of the library, I will:
 
-    - use Factory Functions to return objects (books)
+    - use Factory Functions to return objects (books) - done
     - focus on new array methods (minimising for loops)
     - use functional programming wherever possible
     - write notes to the best of my ability

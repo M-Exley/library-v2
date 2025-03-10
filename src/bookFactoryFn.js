@@ -10,6 +10,12 @@ export let bookLibrary = [
     pages: 640,
     read: "Read",
   },
+  {
+    title: "Executioner",
+    author: "Albert Pierrpoint",
+    pages: 304,
+    read: "Not read",
+  },
 ];
 
 // factory function to add book
@@ -30,19 +36,12 @@ export default function AddBook() {
     const read = document.querySelector('input[name="read"]:checked').value;
     const newBook = { title, author, pages, read }; // return object
 
+    console.log(newBook);
     // push to container
     pushBookToContainer(newBook); // DOM element > adds ID
-    console.log(newBook);
     bookLibrary.push(newBook); // Add to the existing array
     counter(bookLibrary); // increment books
 
     document.getElementById("form").reset(); // RESET
   });
 }
-
-// {
-//   title: "Executioner",
-//   author: "Albert Pierrepoint",
-//   pages: 278,
-//   read: "Not read",
-// },

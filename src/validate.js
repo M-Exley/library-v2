@@ -5,13 +5,11 @@ export default function validate(input) {
   if (!isValid) {
     input.classList.add("invalid");
     input.setAttribute("aria-invalid", "true");
-    console.log("Validation failed"); // Debugging
   } else {
     input.classList.remove("invalid");
     input.setAttribute("aria-invalid", "false");
-    console.log("Validation passed"); // Debugging
   }
 
   console.log(isValid);
-  return isValid; // Return true if valid, false if invalid
+  return isValid;
 }

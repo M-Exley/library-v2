@@ -9,9 +9,13 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    // library: {
+    //   type: "var", // Change from "module" to "var", "umd", or "commonjs"
+    // },
   },
   devtool: "eval-source-map",
   devServer: {
+    hot: true,
     watchFiles: ["./src/index.html"],
   },
   plugins: [
@@ -35,12 +39,12 @@ module.exports = {
       },
     ],
   },
-  // experiments: {
-  //   outputModule: true, // 👈 Ensures ES Module output
-  // },
-  // resolve: {
-  //   alias: {
-  //     browser: "webextension-polyfill", // 👈 Fix for "browser is not defined"
-  //   },
-  // },
+  experiments: {
+    outputModule: false, // 👈 Ensures ES Module output
+  },
+  resolve: {
+    alias: {
+      browser: "webextension-polyfill", // 👈 Fix for "browser is not defined"
+    },
+  },
 };

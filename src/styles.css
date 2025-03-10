@@ -42,7 +42,8 @@
 }
 
 .book-card:hover {
-  transform: translateX(5px);
+  /* transform: translateX(5px); */
+  border: brown 1.5px solid;
 }
 
 .button-delete {
@@ -53,16 +54,6 @@
   text-align: center;
   vertical-align: middle;
   margin: auto;
-}
-
-.button-options {
-  padding: 3px;
-  height: 30px;
-  text-align: center;
-  width: fit-content;
-  vertical-align: middle;
-  color: black;
-  position: relative;
 }
 
 .counter {
@@ -87,43 +78,11 @@ img {
   background-color: #ffe6e6;
 }
 
-.dropdown-main {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.toggle-read {
+  max-height: 35px;
+  width: 80px;
+  padding: 0px;
   font-size: small;
-  border: 1px black solid;
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  flex-direction: column;
-  padding: 6px 2px 0px 18px;
-  height: 30px;
-  cursor: pointer;
-  width: 70px;
-  max-height: 20px;
-}
-
-.dropdown-list {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border: 0.5px black solid;
-  display: none;
-  position: absolute;
-  transform: translate(-19px, 20px);
-  gap: 1px;
-  padding: 0px;
-  list-style-type: none;
-  font-size: x-small;
-}
-li {
-  background-color: azure;
-  border: 1px black dotted;
-  /* width: fit-content; */
-  height: fit-content;
-  padding: 0px;
-  text-wrap: nowrap;
-}
-
-li:hover {
-  background-color: darkcyan;
 }
 
 svg {
